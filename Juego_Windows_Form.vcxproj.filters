@@ -51,6 +51,12 @@
     <ClInclude Include="Arreglo_Asintomaticos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Arreglo_Bala_Jugador.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Arreglo_Balas_Saludable.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Juego_Avanzado.cpp">

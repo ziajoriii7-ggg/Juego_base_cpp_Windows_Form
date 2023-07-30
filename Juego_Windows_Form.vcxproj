@@ -114,6 +114,8 @@
   <ItemGroup>
     <ClInclude Include="Ambulancia.h" />
     <ClInclude Include="Arreglo_Asintomaticos.h" />
+    <ClInclude Include="Arreglo_Balas_Saludable.h" />
+    <ClInclude Include="Arreglo_Bala_Jugador.h" />
     <ClInclude Include="Arreglo_Saludables.h" />
     <ClInclude Include="Asintomatico.h" />
     <ClInclude Include="Bala_Asintomático.h" />

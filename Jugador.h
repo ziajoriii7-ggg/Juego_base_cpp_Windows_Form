@@ -1,11 +1,13 @@
 #pragma once
 #include "Entidad.h"
+#include "Arreglo_Bala_Jugador.h"
 #include <ctime> //control random time
 #include <fstream> //se utiliza para poder guardar archivos
 using namespace System;
 
 class Jugador :public Entidad {
 private: //vidas y control de teclas direccionales
+	Arreglo_Bala_Jugador*balas;
 	Direccion direccion;
 	int vidas;
 public:
@@ -61,5 +63,28 @@ public:
 			fila = 0; //sprites custom
 			break;
 		}
+	}
+
+	Bala_Jugador* getBala(int pos) {
+		return balas->getBala(pos);
+	}
+
+
+	/*Todos estas clases ".h" que se han creado van a ser controladas desde solo una clase llamada "Juego.h" que es una clase base maestra*/
+	void Agregar_Bala(double mousex, double mousey) {
+		balas->Agregar_Bala(x, y, mousex, mousey, alto, ancho);
+	}
+	void  Mostrar_Bala(int ancho1, int alto1) {
+		balas->Mover_Bala_Jugador();
+	}
+	void Mover_Bala(/*más adelante*/) {
+		balas->Mover_Bala_Jugador(/*más adelante*/);
+	}
+
+	void Eliminar_Bala(int pos) {
+		balas->Eliminar_Bala(pos);
+	}
+	int getCantidad_Balas() {
+		return balas->getCantidad_Balas();
 	}
 };
